@@ -12,7 +12,7 @@ if __name__ == "__main__":
     total_tasks = len(to_dos)
     completed_tasks = sum(1 for to_do in to_dos if to_do["completed"])
 
-    print(f"Employee {user.get('name')} is done with tasks \
-    {completed_tasks}/{total_tasks}")
+    print(f"Employee {user.get('name')} is done with tasks\
+({completed_tasks}/{total_tasks})")
 
     [print(f"\t {to_do['title']}") for to_do in to_dos if to_do["completed"]]
